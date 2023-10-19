@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+.container {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.logo img {
+  width: 80px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.one,
+.three,
+.six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
+.one,
+.three {
+  gap: 60px;
+}
+.two {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+.desktopimg img {
+  width: 600px;
+  margin-left: -25px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  gap: 60px;
+}
+.mobileimg img {
+  width: 750px;
+}
+
+.four,
+.five {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.create,
+.plain,
+.sneak {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+p {
+  font-weight: 100;
+  color: hsl(201, 11%, 66%);
+}
+h1,
+h3,
+h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: hsl(210, 10%, 33%);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+.ios,
+.mac {
+  color: hsl(220, 27%, 98%);
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 25px;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 1px 4px 0px hsl(171 66% 44%);
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 1px 4px 0px hsl(233, 100%, 69%);
+}
+.seven {
+  background-color: hsl(192, 11%, 91%);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.options,
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.options div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo2 img {
+  width: 60px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .info,
+  .button {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .desktopimg img,
+  .mobileimg img {
+    width: 300px;
+    margin: auto;
+  }
+  .five img,
+  .create,
+  .plain,
+  .sneak,
+  .button {
+    margin-top: 50px;
+  }
+  .seven,
+  .nav,
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+  }
+  .socials {
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 800px) {
+  .two {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .info {
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .desktopimg img,
+  .mobileimg img {
+    width: 500px;
+    margin: auto;
+  }
+  .five {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+  .nav {
+    margin-top: 10px;
+    width: 90%;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
